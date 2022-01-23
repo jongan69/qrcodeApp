@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://expo.dev/">
-    <img alt="expo sdk" height="128" src="./.github/resources/banner.png">
+    <img alt="expo sdk" height="128" src="https://github.com/expo/expo/raw/master/.github/resources/banner.png">
     <h1 align="center">  Basic Expo QR Code Scanner</h1>
   </a>
 </p>
