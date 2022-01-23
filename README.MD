@@ -26,7 +26,7 @@
 </p>
 
 <p align="center">
-  <a aria-label="try expo with snack" href="https://snack.expo.dev"><b>Try Expo in the Browser</b></a>
+  <a aria-label="try the snack" href="https://snack.expo.dev/@jongan69/qr-code-scanner"><b>Try the snack</b></a>
  |
   <a aria-label="expo documentation" href="https://docs.expo.dev">Read the Documentation 📚</a>
 </p>
