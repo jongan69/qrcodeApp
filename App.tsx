@@ -18,6 +18,7 @@ export default function App() {
   }, []);
 
   const handleBarCodeScanned = ({ type, data }) => {
+    Linking.openURL(data).catch(err => console.error('An error occured', err));
     setScanned(true);
     alert(`Bar code with type ${type} and data ${data} has been scanned!`);
   };
@@ -29,7 +30,7 @@ export default function App() {
     return <Text>No access to camera</Text>;
   }
 
-  return (
+  return ( 
     <View style={styles.container}>
       <Camera style={StyleSheet.absoluteFillObject} type={type} onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
         ></Camera>
