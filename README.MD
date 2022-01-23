@@ -1,204 +1,112 @@
-<!-- PROJECT SHIELDS -->
+<!-- Banner Image -->
 
-[![expo](https://img.shields.io/npm/v/expo.svg?label=Expo)](https://www.npmjs.com/package/react-native-template-expo-basic)
-[![npm](https://img.shields.io/npm/v/react-native-template-expo-basic.svg?label=npm-package)](https://www.npmjs.com/package/react-native-template-expo-basic)
-[![NPM](https://img.shields.io/npm/l/react-native-template-rocketseat-basic.svg)](https://choosealicense.com/licenses/mit)
-
-<!-- [![GitHub issues](https://img.shields.io/github/issues-raw/rocketseat/react-native-template-rocketseat-basic.svg)](https://github.com/Rocketseat/react-native-template-rocketseat-basic/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/rocketseat/react-native-template-rocketseat-basic.svg)](https://github.com/Rocketseat/react-native-template-rocketseat-basic/commits/master)
-[![npm](https://img.shields.io/npm/dt/react-native-template-rocketseat-basic.svg)](https://www.npmjs.com/package/react-native-template-rocketseat-basic) 
--->
-
-<!-- PROJECT LOGO -->
-<br />
 <p align="center">
-  <a href="https://github.com/solrachix/-DevCommunity">
-    <img src="" alt="Logo">
+  <a href="https://expo.dev/">
+    <img alt="expo sdk" height="128" src="./.github/resources/banner.png">
+    <h1 align="center">  Basic Expo QR Code Scanner</h1>
   </a>
-
-  <h3 align="center">Template Expo Basic</h3>
 </p>
 
-<!-- TABLE OF CONTENTS -->
+<p align="center">
+   <a aria-label="SDK version" href="https://www.npmjs.com/package/expo" target="_blank">
+    <img alt="Expo SDK version" src="https://img.shields.io/npm/v/expo.svg?style=flat-square&label=SDK&labelColor=000000&color=4630EB" />
+  </a>
+  <a aria-label="Join our forums" href="https://forums.expo.dev" target="_blank">
+    <img alt="Forums" src="https://img.shields.io/badge/Ask%20Questions%20-blue.svg?style=flat-square&logo=discourse&logoWidth=15&labelColor=000000&color=4630EB" />
+  </a>
+  <a aria-label="Join our Discord" href="https://discord.gg/4gtbPAdpaE" target="_blank">
+    <img alt="Discord" src="https://img.shields.io/discord/695411232856997968.svg?style=flat-square&labelColor=000000&color=4630EB&logo=discord&logoColor=FFFFFF&label=" />
+  </a>
+  <a aria-label="Expo is free to use" href="https://github.com/expo/expo/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-success.svg?style=flat-square&color=33CC12" target="_blank" />
+  </a>
+  <a aria-label="expo downloads" href="http://www.npmtrends.com/expo" target="_blank">
+    <img alt="Downloads" src="https://img.shields.io/npm/dm/expo.svg?style=flat-square&labelColor=gray&color=33CC12&label=Downloads" />
+  </a>
+</p>
 
-## Tabela de Conteúdo
+<p align="center">
+  <a aria-label="try expo with snack" href="https://snack.expo.dev"><b>Try Expo in the Browser</b></a>
+ |
+  <a aria-label="expo documentation" href="https://docs.expo.dev">Read the Documentation 📚</a>
+</p>
 
-- [Tabela de Conteúdo](#tabela-de-conte%c3%bado)
-- [Sobre o Projeto](#sobre-o-projeto)
-  - [Feito Com](#feito-com)
-- [Começando](#come%c3%a7ando)
-  - [Pré-requisitos](#pr%c3%a9-requisitos)
-  - [Estrutura de Arquivos](#estrutura-de-arquivos)
-  - [Instalação](#instala%c3%a7%c3%a3o)
-  - [Edição](#edi%c3%a7%c3%a3o)
-  - [Publicação](#publica%c3%a7%c3%a3o)
-- [Contribuição](#contribui%c3%a7%c3%a3o)
-- [Licença](#licen%c3%a7a)
-- [Contato](#contato)
-
-<!-- ABOUT THE PROJECT -->
-
-## Sobre o Projeto
-
-Este projeto visa a criação de um template que possa ser utilizado no momento de criação de projetos utilizando React Native e o Expo, visto que o processo de instalação e configuração das libs no início de um projeto podem gerar certa complexidade e muitas vezes até erros que atrasam o processo, atrapalhando assim o fluxo de desenvolvimento.
-
-### Feito Com
-
-Abaixo segue o que foi utilizado na criação deste template:
-
-- [React Native](http://facebook.github.io/react-native/) - O React Native é um framework que permite o desenvolvimento de aplicações mobile usando JavaScript e React;
-- [Expo](https://docs.expo.io/) - O Expo é uma plataforma de código aberto para criar aplicativos nativos universais que são executados no Android, iOS e na web;
-- [React Navigation](https://reactnavigation.org/) - O React Navigation surgiu da necessidade da comunidade do React Native de uma navegação de forma fácil de se usar e escrita toda em JavaScript;
-- [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler/) - API declarativa que permite a manipulação de toques e gestos no React Native;
-- [Styled Components](https://styled-components.com) - Permite escrever código CSS real ao estilo de seus componentes(CSS in JS);
-- [Axios](https://github.com/axios/axios) - O Axios é um cliente HTTP baseado em Promises para Browser e NodeJS;
-- [Babel](https://babeljs.io/) - O Babel é um compilador JavaScript gratuito e de código aberto e transpiler configurável usado no desenvolvimento de aplicações JavaScript;
-  - [babel-eslint](https://github.com/babel/babel-eslint) - Este pacote é um _wrapper_ do parser do Babel para o ESLint;
-  - [babel-plugin-transform-remove-console](https://github.com/babel/minify/tree/master/packages/babel-plugin-transform-remove-console) - Esse plugin do Babel remove todos os console.\* da sua aplicação ([Dica no site oficial do RN](https://facebook.github.io/react-native/docs/performance#using-consolelog-statements));
-
-<!-- GETTING STARTED -->
-
-## Começando
-
-Para conseguir utilizar o template, seja através do Expo CLI ou com uma cópia local dos arquivos, siga os passos abaixo.
-
-### Pré-requisitos
-
-Antes de seguirmos para as configurações e uso do template, é ideal que você tenha o ambiente configurado para criar e testar aplicativos em Expo, para isso você pode seguir o guia do link abaixo:
-
-[Ambiente Expo (Android/iOS)](http://www.matera.com/blog/post/aplicacoes-mobile-multiplataforma-com-react-native-e-expo)
-
-E deverá instalar também dois plugins no VSCode, sendo eles o ESLint e o Prettier.
-Como instalar: [VSCode extension](https://code.visualstudio.com/docs/editor/extension-gallery)
-
-### Estrutura de Arquivos
-
-A estrutura de arquivos está da seguinte maneira:
-
-```bash
-RN-Expo-Template
-├── assets/
-├── src/
-│   ├── assets/
-│   │   └── logo.png
-│   ├── components/
-│   ├── Pages/
-│   │   └── Home/
-│   │       └── index.js
-│   │       └── style.js
-│   ├── services/
-│   │   └── api.js
-│   ├── styles/
-│   │   └── themes/
-│   │       └── index.js
-│   │       └── Dark.js
-│   │       └── Light.js
-│   │   └── index.js
-│   ├── utils/
-│   │   └── usePersistedState.js
-│   ├── routes.js
-├── .env
-├── .gitignore
-├── babel.config.js
-├── App.js
-├── App.json
-├── LICENSE
-├── package.json
-└── README.md
-```
-
-Serão explicados os arquivos e diretórios na seção de [Edição](#edição).
-
-### Instalação
-
-1. Para instalar e utilizar esse template o processo é bem simples, basta criar um projeto novo utilizando o comando:
-
-```sh
-expo init --template react-native-template-expo-basic
-```
-
-Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto.
-
+<p>
+  <a aria-label="Follow @expo on Twitter" href="https://twitter.com/intent/follow?screen_name=expo" target="_blank">
+    <img  alt="Twitter: expo" src="https://img.shields.io/twitter/follow/expo.svg?style=flat-square&label=Follow%20%40expo&logo=TWITTER&logoColor=FFFFFF&labelColor=00aced&logoWidth=15&color=lightgray" target="_blank" />
+  </a>
+  <a aria-label="Follow Expo on Medium" href="https://blog.expo.dev">
+    <img align="right" alt="Medium: exposition" src="https://img.shields.io/badge/Learn%20more%20on%20our%20blog-lightgray.svg?style=flat-square" target="_blank" />
+  </a>
+</p>
+  
 ---
 
-### Edição
+- [📚 Documentation](#-documentation)
+- [🗺 Project Layout](#-project-layout)
+- [🏅 Badges](#-badges)
+- [👏 Contributing](#-contributing)
+- [❓ FAQ](#-faq)
+- [💙 The Team](#-the-team)
+- [License](#license)
 
-Nesta seção haverão instruções caso você queira editar o template, explicando para que os diretórios são utilizados e também os arquivos de configuração.
+Expo is an open-source platform for making universal native apps that run on Android, iOS, and the web. It includes a universal runtime and libraries that let you build native apps by writing React and JavaScript. This repository is where the Expo client software is developed, and includes the client apps, modules, apps, and more. The [Expo CLI](https://github.com/expo/expo-cli) repository contains the Expo development tools.
 
-- **src** - Diretório contendo todos os arquivos da aplicação, é criado um diretório `src` para que o código da aplicação possa ser isolado em um diretório e facilmente portado para outros projetos, se necessário;
+[Click here to view the Expo Community Guidelines](https://expo.dev/guidelines). Thank you for helping keep the Expo community open and welcoming!
 
+## 📚 Documentation
 
-  - **assets** - Diretório para armazenar imagens em geral que possam ser utilizadas na aplicação, dentro de `assets` pode-se criar um novo diretório para guardar somente as imagens, assim é possível ter um diretório para guardar todo tipo de arquivo, e não apenas imagens;
+<p>Learn about building and deploying universal apps <a aria-label="expo documentation" href="https://docs.expo.dev">in our official docs!</a></p>
 
-  - **pages** - Diretório onde ficam as páginas (telas) da aplicação, como forma de padronização e boas práticas toda página fica dentro de um diretório com seu nome;
+- [Getting Started](https://docs.expo.dev/)
+- [API Reference](https://docs.expo.dev/versions/latest/)
+- [Using Custom Native Modules](https://docs.expo.dev/bare/exploring-bare-workflow/)
 
-    - **Home** - Diretório exemplo de uma página cujo nome é **Home**, por padrão foi adotado usar sempre como nome do diretório o nome da página em camelCase, dentro desse diretório é necessária a criação ao menos do arquivo `index.js`;
+## 🗺 Project Layout
 
-      - **index.js** - Arquivo com toda a lógica da página, tal como os componentes visuais a serem renderizados;
+- [`packages`](/packages) All the source code for the Unimodules, if you want to edit a library or just see how it works this is where you'll find it.
+- [`apps`](/apps) This is where you can find Expo projects which are linked to the development Unimodules. You'll do most of your testing in here.
+- [`docs`](/docs) The source code for **https://docs.expo.dev**
+- [`templates`](/templates) The template projects you get when you run `expo start`
+- [`react-native-lab`](/react-native-lab) This is our fork of `react-native`. We keep this very close to the upstream but sometimes need to add quick fixes locally before they can land.
+- [`guides`](/guides) In-depth tutorials for advanced topics like contributing to the client.
+- [`android`](/android) contains the Android project.
+- [`home`](/home) contains the JavaScript source code of the app.
+- [`ios`](/ios) contains the iOS project.
+- [`ios/Exponent.xcworkspace`](/ios) is the Xcode workspace. Always open this instead of `Exponent.xcodeproj` because the workspace also loads the CocoaPods dependencies.
+- [`tools`](/tools) contains build and configuration tools.
+- [`template-files`](/template-files) contains templates for files that require private keys. They are populated using the keys in `template-files/keys.json`.
+- [`template-files/ios/dependencies.json`](/template-files/ios/dependencies.json) specifies the CocoaPods dependencies of the app.
 
-  - **services** - Diretório onde serão criados os arquivos relacionados a serviços utilizados na aplicação, por exemplo, requisições HTTP, autenticação com Firebase ou qualquer outro serviço que for utilizado;
+## 🏅 Badges
 
-    - **api.js** - Arquivo com a configuração da biblioteca Axios para envio de requisições HTTP, o endereço que vem configurado por padrão é para a API do Github;
+Let everyone know your app can be run instantly in the _Expo Go_ app!
+<br/>
 
-  - **routes.js** - Arquivo com as configurações de navegação da aplicação, nele são criados os Navigators disponibilizados na biblioteca React Navigation;
-  - 
-- **.babelrc** - Arquivo de configuração do Babel, é nele que é configurado o Babel Plugin Root Import para aceitar imports absolutos na aplicação usando o diretório `src` como raiz;
+[![runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-000.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
 
-- **.editorconfig** - Arquivo destinado à configuração do plugin Editor Config, que padroniza algumas configurações para o editor em diferentes ambientes;
+[![runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
 
-- **.eslintrc** - Arquivo de configuração do ESLint, é nele que são inseridas as regras e configurações de Linting do projeto;
+```md
+[![runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-000.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
 
-- **App.js** - Arquivo raiz da aplicação, também chamado de _Entry Point_, é o primeiro arquivo chamado no momento do build e execução da aplicação, nele é chamado o arquivo `src/routes.js` que por sua vez chama as rotas da aplicação;
-
-- **jsconfig.json** - Arquivo de configuração do JavaScript no Editor, ele é o responsável por ativar o Auto Complete de códigos JavaScript na aplicação;
-
-- **package.json** - Diferente dos projetos comuns, esse arquivo tem as configurações necessárias para a publicação do Template no NPM, para saber mais sobre isso veja a seção abaixo.
-
-### Publicação
-
-Para publicar um template como esse, o processo é bastante simples e rápido.
-
-1. Crie uma conta no [site do NPM](https://www.npmjs.com/);
-
-2. Com a conta criada execute o comando abaixo e insira suas credenciais;
-
-```sh
-npm login
+[![runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
 ```
 
-3. Basta abrir o arquivo `package.json` e modificar as informações de acordo com o seu template, mas as informações mais importantes são duas, o `name` e o `version`, que são os únicos que tem restrições, seguem abaixo as restrições:
+## 👏 Contributing
 
-   1. O `name` sempre deve começar com o prefixo `react-native-template-` seguido do nome do seu template;
-   2. O template deve ser publicado em uma conta pessoal, pois quando publicado em uma **Organization** é acrescentado o prefixo `@<nome_da_organization>` no nome do pacote;
-   3. O `name` deve ser único, não podendo ser igual ao de um template já publicado;
-   4. A `version` deve ser atualizada a cada publicação, se o template está na versão **0.0.1** e é preciso publicar uma atualização no mesmo, a `version` deve ser diferente e superior a versão atual, por exemplo, **0.0.2**;
+If you like Expo and want to help make it better then check out our [contributing guide](/CONTRIBUTING.md)! Check out the [Expo CLI repo](http://github.com/expo/expo-cli) to work on the Expo CLI, and various other universal development tools.
 
-4. Após configurar corretamente o `package.json` basta executar no terminal/prompt o comando `npm publish`;
+## ❓ FAQ
 
-5. Com a publicação finalizada o template deve ficar disponível através do link `https://www.npmjs.com/package/react-native-template-<nome_do_template>`.
+If you have questions about Expo and want answers, then check out our [Frequently Asked Questions](https://docs.expo.dev/versions/latest/introduction/faq/)!
 
-<!-- CONTRIBUTING -->
+If you still have questions you can ask them on our [forums](https://forums.expo.dev), [Discord](https://discord.gg/4gtbPAdpaE) or on Twitter [@Expo](https://twitter.com/expo).
 
-## Contribuição
+## 💙 The Team
 
-Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
+Curious about who makes Expo? Here are our [team members](https://expo.dev/about)!
 
-1. Faça um Fork do projeto
-2. Crie uma Branch para sua Feature (`git checkout -b feature/FeatureIncrivel`)
-3. Adicione suas mudanças (`git add .`)
-4. Comite suas mudanças (`git commit -m 'Adicionando uma Feature incrível!`)
-5. Faça o Push da Branch (`git push origin feature/FeatureIncrivel`)
-6. Abra um Pull Request
+## License
 
-<!-- LICENSE -->
-
-## Licença
-
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
-
-<!-- CONTACT -->
-
-## Contato
-
-Solrachix - [Github](https://github.com/solrachix) - **carlos.miguel.oliveira.17@gmail.com**
-
+The Expo source code is made available under the [MIT license](LICENSE). Some of the dependencies are licensed differently, with the BSD license, for example.
